@@ -120,7 +120,7 @@ pytest -q
 
 ## 👤 作者
 
-- 相然 王 (<your_email@example.com>)
+- 大王
 
 ---
 
