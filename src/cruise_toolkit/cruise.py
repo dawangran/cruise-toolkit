@@ -88,6 +88,13 @@ def parse_args():
     return p.parse_args()
 
 # --------------------- Helpers ---------------------
+def _expand_fastqs(tokens: Iterable[str]) -> List[str]:
+    out=[]
+    for t in tokens:
+        out.extend([x.strip() for x in str(t).split(",") if x.strip()])
+    return out
+
+
 def discover_fastqs(fq_dir: str) -> List[str]:
     files=[]
     for pat in ["*.fq", "*.fastq", "*.fq.gz", "*.fastq.gz"]:
