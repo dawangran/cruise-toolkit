@@ -12,7 +12,7 @@ It provides a **single command-line entry point** — `cruise-toolkit` — wrapp
 From source (development mode):
 
 ```bash
-git clone https://github.com/<your-org>/cruise-toolkit.git
+git clone https://github.com/dawangran/cruise-toolkit.git
 cd cruise-toolkit
 pip install -e .
 ```
