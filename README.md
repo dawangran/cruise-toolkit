@@ -25,6 +25,17 @@ pip install cruise-toolkit
 
 ---
 
+## 📦 外部依赖
+
+请确保以下工具已安装并在 `$PATH` 中：
+- BWA — http://bio-bwa.sourceforge.net/
+- SAMtools — http://www.htslib.org/
+- seqkit — https://bioinf.shenwei.me/seqkit/
+- fastp — https://github.com/OpenGene/fastp
+- PISA — https://github.com/shiquan/PISA
+
+---
+
 ## 🚀 Quick Start
 
 Run the main workflow (arguments are fully compatible with your original `cruise.py` script):
@@ -121,8 +132,4 @@ pytest -q
 
 - Dawn 
 
----
 
-## 📄 License
-
-MIT License
