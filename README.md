@@ -34,8 +34,8 @@ cruise-toolkit \
   --bam input.bam \
   --fastqs fq1.fastq.gz,fq2.fastq.gz \
   --valid-cell valid.cell.tsv \
-  --adapt CTACGATCCGACTTTCTGCG \
-  --model BBBBBBBBBBCCTTCCBBBBBBBBBBCGATGUUUUUUUUUUTTTT \
+  --adapt ATGCGCGATAACCTC \
+  --model BBBBBBBBBBATGBBBBBBBBBBATGUUUUUUUUUUTTTT \
   --threads 16 \
   --cb-tags CC,CB \
   --umi-tag UB \

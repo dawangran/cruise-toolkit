@@ -19,7 +19,7 @@ long_description = read_text("README.md")
 
 setup(
     name="cruise-toolkit",
-    version="0.1.1", 
+    version="1.0.0", 
     description="Unified CLI wrapper for barcode/UMI & CR/UR tools",
     long_description=long_description,
     long_description_content_type="text/markdown",
