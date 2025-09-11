@@ -1,20 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
-CRUISE / 码舟 — cruise.py
-(resume-enabled + sample-level parallel + optional cleanup + full QC aggregation)
-
-流程（与原版一致）：
-  0) cbumi_counter.py -> 00.ref/short.fasta
-  1) [并行 每样本] barcode_split.py -> tmp_<SID>/01.barcode/model.retain.mask.drc.merge.fq
-                     cr_ur_align.py   -> tmp_<SID>/02.align_cb/aln_CR_UR.txt
-  2) adjust_bc_umi.py (跨样本)        -> 01.adjust/adjust.tsv
-  3) [并行 每样本] add_cb_ub.py       -> tmp_<SID>/03.filterBam/mask.adjust.valid.fq
-  4) 合并 -> 01.adjust/merge.mask.adjust.valid.fq
-  5) QC 汇总（每样本）：raw / ≥min_len / q10 / model / adjust
-  6) 可选清理：--no-keep-sample-tmp 删除所有 tmp_*，仅保留 00.ref 与 01.adjust
-"""
 
 from __future__ import annotations
 import argparse, glob, os, sys, shutil, gzip

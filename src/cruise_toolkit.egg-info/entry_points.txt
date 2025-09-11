@@ -1,2 +1,0 @@
-[console_scripts]
-cruise-toolkit = cruise_toolkit.cli:main
