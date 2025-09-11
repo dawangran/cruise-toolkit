@@ -1,9 +1,11 @@
-Metadata-Version: 2.4
+Metadata-Version: 2.1
 Name: cruise-toolkit
 Version: 0.1.0
 Summary: Unified CLI wrapper for barcode/UMI & CR/UR tools
 Author: Dawn
+Author-email: 605547565@qq.com
 License: MIT
+Project-URL: Homepage, https://github.com/dawangran/cruise-toolkit
 Keywords: single-cell,UMI,barcode,cyclone,RNA
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -11,7 +13,6 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
-Dynamic: license-file
 
 
 # cruise-toolkit

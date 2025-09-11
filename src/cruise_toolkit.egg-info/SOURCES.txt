@@ -1,6 +1,11 @@
+.gitattributes
 LICENSE
+MANIFEST.in
 README.md
 pyproject.toml
+setup.cfg
+setup.py
+src/.DS_Store
 src/common_utils.py
 src/cruise_toolkit/__init__.py
 src/cruise_toolkit/__main__.py
