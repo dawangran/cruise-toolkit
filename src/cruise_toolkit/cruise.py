@@ -111,7 +111,7 @@ def seqkit_available() -> bool:
 
 def seqkit_stat_text(path: Path) -> str:
     if not seqkit_available(): return ""
-    return run_cmd_capture(["seqkit", "stat", str(path), "--all"])
+    return run_cmd_capture(["seqkit", "stats", str(path), "--all"])
 
 # ---------- Counting utilities ----------
 def _seqkit_count_reads(path: Path) -> Optional[int]:

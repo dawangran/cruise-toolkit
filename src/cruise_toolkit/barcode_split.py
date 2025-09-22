@@ -61,7 +61,7 @@ def pisa_rule_from_model(model: str) -> str:
 
 def append_seqkit_stat_line(fastq: Path, qc: Path):
     qc.parent.mkdir(parents=True, exist_ok=True); qc.touch(exist_ok=True)
-    out = run_cmd_capture(["seqkit","stat",str(fastq),"--all"])
+    out = run_cmd_capture(["seqkit","stats",str(fastq),"--all"])
     lines=[ln for ln in out.splitlines() if ln.strip()]
     if lines:
         with open(qc,"a") as f: f.write(lines[-1]+"\n")

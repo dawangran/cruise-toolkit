@@ -32,7 +32,7 @@ pip install cruise-toolkit
 - SAMtools — http://www.htslib.org/
 - seqkit — https://bioinf.shenwei.me/seqkit/
 - fastp — https://github.com/OpenGene/fastp
-- PISA — https://github.com/shiquan/PISA
+- PISA — https://github.com/shiquan/PISA (v0.12b)
 
 ---
 
